@@ -1,4 +1,4 @@
-public class _1_DataTypes {
+public class _2_DataTypes {
     public static void main(String[] args) {
         //Whole Numbers
         byte by=127;
@@ -23,5 +23,14 @@ public class _1_DataTypes {
         char ch = 'E';
         System.out.println("value of char variable is: "+ch);
 
+        //Widely casting (store int into long - small size into large size)
+        int i2 = 555;
+        long l2 = i2;
+        System.out.println("Widely Casting: "+l2);
+
+        //Narrow Casting(unsave because convert large size to small - explicit write cast)
+        long l3 = 777666555444333l;
+        int i3 = (int)l3;
+        System.out.println("Narrow Casting:"+i3);  //Garbage value
     }
 }
